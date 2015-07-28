@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Demo</title>
+	      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+     <!--import material design icons-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+    <body>
+      <!--Import jQuery before materialize.js-->
+      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+	<script>
+	(function ($) {
+
+		/* trigger when page is ready */
+		$(document).ready(function (){
+		    $(".button-collapse").sideNav();
+		    $('.parallax').parallax();
+		        $('.modal-trigger').leanModal();
+
+		});
+	}(window.jQuery || window.$));
+	</script>
+</head>
+<body>
+  <nav class="white">
+    <div class="nav-wrapper container">
+		<a href="index.html" class="brand-logo"><img src="images/logo.png"/></a>
+      <a href="#" data-activates="mobile-demo" class="button-collapse black-text"><i class="material-icons">menu</i></a>
+      <ul class="right hide-on-med-and-down">
+        <li><a class="black-text" href="#">Link</a></li>
+        <li><a class="black-text" href="#">Link</a></li>
+        <li><a class="black-text" href="#">Link</a></li>
+        <li><a class="black-text" href="#">Link</a></li>
+      </ul>
+      <ul class="side-nav" id="mobile-demo">
+        <li><a class="black-text" href="#">Link</a></li>
+        <li><a class="black-text" href="#">Link</a></li>
+        <li><a class="black-text" href="#">Link</a></li>
+        <li><a class="black-text" href="#">Link</a></li>
+      </ul>
+    </div>
+  </nav>
+<!--section1-->
+<div class="parallax-container valign-wrapper center">
+<h3 class="white-text flow-text">Code.ci rassemble, principalement, des développeurs désireux de fédérer leurs compétences afin de répondre à des défis sociaux en Côte d’Ivoire.</h3>
+	<div class="parallax"><img src="images/main3.jpg"></div>
+</div>
+<div class="section white">
+	<div class="container">
+		<div class="row">
+		<div class="col s4 m4">
+        <div class="card-panel teal">
+          <span class="white-text">Rejoignez nous
+          </span>
+            <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Modal</a>
+
+        </div>
+      </div>
+		<div class="col s4 m4">
+	  		<div class="card blue-grey darken-1">
+            <div class="card-content white-text">
+              <span class="card-title">Card Title</span>
+              <p>I am a very simple card. I am good at containing small bits of information.
+              I am convenient because I require little markup to use effectively.</p>
+            </div>
+            <div class="card-action">
+              <a href="#">This is a link</a>
+              <a href="#">This is a link</a>
+            </div>
+        	</div>
+    	</div>
+    	<div class="col s4 m4">
+    		<div class="card">
+			    <div class="card-image waves-effect waves-block waves-light">
+			      <img class="activator" src="images/office.jpg">
+			    </div>
+			    <div class="card-content">
+			      <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+			      <p><a href="#">This is a link</a></p>
+			    </div>
+			    <div class="card-reveal">
+			      <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+			      <p>Here is some more information about this product that is only revealed once clicked on.</p>
+			    </div>
+  			</div>	
+		</div>
+		<div class="row">
+      
+    </div>
+	<!--api hours-->
+	  	
+    	</div>
+	<!--ecrivez-->
+	<!--actus-->
+	</div>
+</div>
+<div class="parallax-container">
+	<div class="parallax"><img src="images/mainbg.jpg"></div>
+</div>
+ <!-- Modal Structure -->
+  <div id="modal1" class="modal bottom-sheet">
+		   <div class="row">
+		    <form class="col s12">
+		      <div class="row">
+		        <div class="input-field col s6">
+		          <i class="material-icons prefix">account_circle</i>
+		          <input id="icon_prefix" type="text" class="validate">
+		          <label for="icon_prefix">First Name</label>
+		        </div>
+		        <div class="input-field col s6">
+		          <i class="material-icons prefix">phone</i>
+		          <input id="icon_telephone" type="tel" class="validate">
+		          <label for="icon_telephone">Telephone</label>
+		        </div>
+		      </div>
+		    </form>
+		  </div>
+		        
+    <div class="modal-footer">
+      <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+    </div>
+  </div>
+</body>
+
+</html>
