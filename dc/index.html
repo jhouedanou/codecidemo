@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Demo MaterializeCSS</title>
+	      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+     <!--import material design icons-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+    <body>
+      <!--Import jQuery before materialize.js-->
+      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+	<script>
+	(function ($) {
+		/* trigger when page is ready */
+		$(document).ready(function (){
+		    $(".button-collapse").sideNav();
+		    $('.parallax').parallax();
+		   	$('.modal-trigger').leanModal();
+		});
+	}(window.jQuery || window.$));
+	</script>
+	<style type="text/css">
+		.pageaccueil{
+			background: url(images/bg.png);}
+	</style>
+</head>
+<body class="pageaccueil">
+  <nav class="white">
+    <div class="nav-wrapper container">
+		<a ref="index.html" class="brand-logo black-text"><img src="images/logo.png"/> CODE.CI</a>
+      <a href="#" data-activates="mobile-demo" class="button-collapse black-text"><i class="material-icons">menu</i></a>
+      	<ul class="right hide-on-med-and-down">
+	        <li class="active"><a class="black-text" href="#">Accueil</a></li>
+	        <li><a class="black-text" href="#">A propos</a></li>
+	        <li><a class="black-text" href="#">Actualités</a></li>
+	        <li><a class="black-text" href="#">Devenir membre</a></li>
+      	</ul>
+      	<ul class="side-nav" id="mobile-demo">
+	        <li><a class="black-text" href="#">Accueil</a></li>
+	        <li><a class="black-text" href="#">A propos</a></li>
+	        <li><a class="black-text" href="#">Actualités</a></li>
+	        <li><a class="black-text" href="#">Devenir membre</a></li>
+    	</ul>
+    </div>
+  </nav>
+<!--section1-->
+<div class="parallax-container valign-wrapper center">
+	<div class="container">
+			<h3 class="white-text flow-text">Code.ci rassemble, principalement, des développeurs désireux de fédérer leurs compétences afin de répondre à des défis sociaux en Côte d’Ivoire.</h3>
+			<a href="#r" class="btn-large waves-effect waves-light blue darken-4 z-depth-3"><i class="material-icons right">&#xE315;</i>Qui sommes nous </a>
+	</div>
+		<div class="parallax"><img src="images/mainbg.jpg"></div>
+</div>
+<div class="section white">
+	<div class="container">
+		<div class="row">
+			<div class="col s4 m4">
+		  		<h5><i class="material-icons right">&#xE8E9;</i>Agenda</h5>
+		  		<div class="card hoverable">
+		            <div class="card-content">
+		              <span class="card-title grey-text text-darken-4">API Hours</span>
+		              	<p>Date: Mercredi 29 Juillet 2015</p>
+						<p>Heure: De 19h00 à 20h30</p>
+						<p>Lieu: Stand Up Comedy Club, Cocod</p>
+		            </div>
+		            <div class="card-action">
+		              <a class="btn waves-effect waves-light orange darken-4 white-text" href="#"><i class="material-icons right">&#xE315;</i>Details</a>
+		            </div>
+	        	</div>
+    		</div>
+			<div class="col s4 m4">
+				<h5><i class="material-icons right">&#xE8E8;</i> Rejoignez nous</h5>
+		        <div class="card hoverable">
+		          <div class="card-content">
+			          	<span class="grey-text text-darken-4">Devenez membre de code.ci et contribuez à votre façon. Que vous soyez entrepreneur, community manager, développeur ou designer, vous apporterez votre contribution dans l'elaboration de projets passionants qui répondent à des besoins sociaux.
+				          </span>
+		          </div>
+		          <div class="card-action">
+		          		<a class="waves-effect waves-light btn modal-trigger grey-text yellow accent-4 text-darken-4" href="#modal1"><i class="material-icons right">&#xE0BE;</i>Contactez nous</a>
+		          </div>
+		        </div>
+	      	</div>
+		
+    	<div class="col s4 m4">
+    		<h5><i class="material-icons right">&#xE031;</i> actualités</h5>
+			<div class="card hoverable">
+			    <div class="card-image waves-effect waves-block waves-light">
+			      <img class="activator" src="http://dummyimage.com/250x100/01579b/fff&text=image">
+			    </div>
+			    <div class="card-content">
+			      <span class="card-title activator grey-text text-darken-4">Assemblée générale<i class="material-icons right">more_vert</i></span>
+			    </div>
+			    <div class="card-reveal">
+			      <span class="card-title grey-text text-darken-4">Assemblée générale<i class="material-icons right">close</i></span>
+			      <p>Abidjan 27 juin 2015, il est 10h06. L’association CODE.CI s’apprête à voir le jour à l’occasion de son assemblée générale...</p>
+			    </div>
+  			</div>	
+		</div>
+    	</div>
+	</div>
+</div>
+ <!-- Modal Structure -->
+  <div id="modal1" class="modal bottom-sheet">
+		   <div class="row">
+		    <form class="col s12">
+		      <div class="row">
+		        <div class="input-field col s6">
+		          <i class="material-icons prefix">account_circle</i>
+		          <input id="icon_prefix" type="text" class="validate">
+		          <label for="icon_prefix">First Name</label>
+		        </div>
+		        <div class="input-field col s6">
+		          <i class="material-icons prefix">phone</i>
+		          <input id="icon_telephone" type="tel" class="validate">
+		          <label for="icon_telephone">Telephone</label>
+		        </div>
+		      </div>
+		    </form>
+		  </div>
+		        
+    <div class="modal-footer">
+      <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+    </div>
+  </div>
+</body>
+
+</html>

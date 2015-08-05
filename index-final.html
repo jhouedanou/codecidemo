@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Demo</title>
+		      <!--Import materialize.css-->
+	      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+	      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	      <!--Let browser know website is optimized for mobile-->
+	      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	 <!--Import jQuery before materialize.js-->
+	      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+	      <script type="text/javascript" src="js/materialize.min.js"></script>
+	      <script>
+		(function ($) {
+			/* trigger when page is ready */
+			$(document).ready(function (){
+			    $(".button-collapse").sideNav();
+			    $('.parallax').parallax();
+			   	$('.modal-trigger').leanModal();
+			});
+		}(window.jQuery || window.$));
+		</script>
+</head>
+<body class="pageaccueil">
+	<nav class="white">
+		<div class="nav-wrapper container">
+			<!--logo-->	
+			<a href="index.html" class="logo-container brand-logo black-text"><img src="images/logo.png" alt=""/>CODE.CI</a>
+			<!--activateur sidenav-->
+			<a href="#" data-activates="mobile" class="button-collapse black-text"><i class="material-icons">menu</i></a>
+	<!--menu desktop-->
+			<ul class="right hide-on-med-and-down" id="desktop">
+				<li><a href="#">Lien</a></li>
+				<li><a href="#">Lien</a></li>
+			</ul>
+			<ul class="side-nav" id="mobile">
+				<li><a href="#" class="black-text">Lien</a></li>
+				<li><a href="#" class="black-text">Lien</a></li>
+			</ul>	
+		</div>
+	</nav>
+<div class="parallax-container valign-wrapper center">
+		<div class="container">
+			<h3 class="white-text flow-text">Ceci est un text de présentation</h3>
+			<a href="#r" class="btn-large waves-effect waves-light blue darken-4 z-depth-3"><i class="material-icons right"></i>Bouton</a>
+		</div>
+		<div class="parallax"><img src="images/mainbg.jpg" alt=""></div>
+	</div>	
+<div class="section white">
+	<div class="containe">
+		<div class="row">
+			<div class="col s12 m4 l4">
+				<div class="card hoverable">
+					<div class="card-content">
+						some text here 
+					</div>
+				</div>
+			</div>
+			<div class="col s12 m4 l4">
+				<div class="card hoverable">
+					<div class="card-content">
+						some text here 
+					</div>
+				</div>
+			</div>
+			<div class="col s12 m4 l4">
+				<div class="card hoverable">
+					<div class="card-content">
+						some text here 
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+
+</html>
